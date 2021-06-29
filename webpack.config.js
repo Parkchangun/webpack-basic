@@ -18,6 +18,7 @@ module.exports = {
         use: [ //역순으로 불러옴(stack)
           'style-loader', //불러온 css의 style을 입힘
           'css-loader', //css를 불러옴
+          'postcss-loader', //공급업체 접두사 제공 및 plugin 사용
           'sass-loader'
         ]
       }
