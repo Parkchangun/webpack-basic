@@ -6,9 +6,9 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: './js/main.js', //파일을 읽어들이는 진입점 설정
   output: { //결과물(번들)을 반환하는 설정
+    filename: 'app.js',
     path: path.resolve(__dirname, 'dist'), //nodejs에서 필요로 하는 '절대 경로' 
     //__dirname: 현재 파일(webpack.config.js)의 경로를 지정해주는 nodejs 전역변수
-    filename: 'app.js',
     clean: true
   },
   module: {
@@ -44,4 +44,4 @@ module.exports = {
   devServer: {
     host: 'localhost'
   }
-}
+};
