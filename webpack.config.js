@@ -21,6 +21,12 @@ module.exports = {
           'postcss-loader', //공급업체 접두사 제공 및 plugin 사용
           'sass-loader'
         ]
+      },
+      {
+        test: /\.js$/,
+        use: [
+          'babel-loader'
+        ]
       }
     ]
   },
